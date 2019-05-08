@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <!-- JQuery / Materialize CSS + JavaScript imports -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
+    <!-- Page CSS -->
+    <link href="css/common.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="container">
+        <div id="slide-out" class="side-nav fixed show-on-large-only">
+            <div id="gradient-header"></div>
+            <ul id="side-nav-items">
+                <div id="side-nav-head">
+                    <img id="side-nav-logo" src="img/side-nav-logo.png" alt="Live University Logo">
+                </div>
+                <div id="side-nav-separator"></div>
+                <li class="side-nav-item">
+                    <a href="#!"><i class="material-icons side-nav-icon">people</i>Colaboradores</a>
+                </li>
+                <li class="side-nav-item active">
+                    <a href="#!"><i class="material-icons side-nav-icon active">developer_board</i>Cursos</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="avatar-panel right">
+            <div class="left light grey-text" style="margin-right: 1rem">
+                <a href="#!">
+                    <div class="avatar-header">Ricardo Barato</div>
+                </a>
+                <div class="right">Live University</div>
+            </div>
+            <a href="#!">
+                <div class="avatar left">
+                    <img class="circle" src="img/avatar.jpg" alt="User Avatar">
+                </div>
+                <div class="avatar grey-text right">
+                    <i class="material-icons small" style="margin-left: 0.5rem; line-height: 4rem;">expand_more</i>
+                </div>
+            </a>
+        </div>
+
+        <a href="#" data-activates="slide-out" class="btn-sidenav hide-on-large-only"><i
+                class="material-icons">menu</i></a>
+
+        <div id="content">
+            <div class="schedule-panel row">
+                <div class="col s12 m12 right">
+                    <div class="card-panel light white">
+                        <h5 class="panel-header left">Cursos</h5>
+                        <form>
+                            <div class="input-field right" style="margin-top: -14px">
+                                <input id="search" type="search" placeholder="Pesquisar.." required>
+                                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                            </div>
+                        </form>
+                        <div style="padding-top: 70px">
+                            <table class="bordered highlight responsive-table">
+                                <tbody class="class-info">
+                                    <tr>
+                                        <td>
+                                            <div class="class-date">
+                                                <span class="date-number">03</span><br>AGO
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="class-name">14 pr&aacute;ticas de compras</span>
+                                            <br> Legenda sobre o curso
+                                        </td>
+                                        <td>
+                                            Colaboradores:
+                                            <span class="colab-counter">
+                                                <span class="counter-big">15</span> / 30
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <a class="waves-effect waves-light btn-flat class-details">Abrir</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="class-date">
+                                                <span class="date-number">03</span><br>AGO
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="class-name">14 pr&aacute;ticas de compras</span>
+                                            <br> Legenda sobre o curso
+                                        </td>
+                                        <td>
+                                            Colaboradores:
+                                            <span class="colab-counter">
+                                                <span class="counter-big">15</span> / 30
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <a class="waves-effect waves-light btn-flat class-details">Abrir</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="class-date">
+                                                <span class="date-number">03</span><br>AGO
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="class-name">14 pr&aacute;ticas de compras</span>
+                                            <br> Legenda sobre o curso
+                                        </td>
+                                        <td>
+                                            Colaboradores:
+                                            <span class="colab-counter">
+                                                <span class="counter-big">15</span> / 30
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <a class="waves-effect waves-light btn-flat class-details">Abrir</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="class-date">
+                                                <span class="date-number">03</span><br>AGO
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="class-name">14 pr&aacute;ticas de compras</span>
+                                            <br> Legenda sobre o curso
+                                        </td>
+                                        <td>
+                                            Colaboradores:
+                                            <span class="colab-counter">
+                                                <span class="counter-big">15</span> / 30
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <a class="waves-effect waves-light btn-flat class-details">Abrir</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/btn-sidenav.js"></script>
+    <script src="js/class-details.js"></script>
+    <script src="js/button-color.js"></script>
+</body>
+
+</html>

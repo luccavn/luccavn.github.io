@@ -1,0 +1,149 @@
+/* CSS Rules that are common between all pages. */
+
+.navbar {
+    background: #00000033 !important;
+    transition: background-color 200ms linear;
+}
+
+.grow {
+    transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+    transform: scale(1.1);
+}
+
+.nav-item {
+    margin: 4px;
+}
+
+body {
+    background: url("../img/background.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    transition: all .7s ease-in-out;
+}
+
+.navbar.scrolled {
+    background-color: #f8f9fa !important;
+    transition: background-color 200ms linear;
+}
+
+.navBtn {
+    font-family: 'RobotoCondensed' !important;
+    text-shadow: 1px 1px #000;
+    color: #f8f9fa !important;
+    transition: all 200ms linear;
+}
+
+.navBtn.active {
+    text-decoration: underline;
+}
+
+.navBtn.scrolled {
+    text-shadow: none;
+    color: #343a40 !important;
+    transition: color 200ms linear;
+}
+
+.navBtn:hover {
+    text-decoration: none;
+    color: #b7d10c !important;
+    transition: all 100ms linear;
+}
+
+.aboutBox {
+    border-radius: 0px !important;
+    margin-left: 0rem !important;
+    margin-right: 0rem !important;
+    margin-top: 300px;
+    size: auto auto;
+    font-family: RobotoLight;
+    background-color: rgba(248, 249, 250, 0.9) !important;
+    border-style: solid;
+    border-width: 1px;
+    border-left: none;
+    border-right: none;
+    border-color: #d3d3d3;
+    transition: all .7s ease-in-out;
+}
+
+.card {
+    background-color: rgba(248, 249, 250, 0.9);
+}
+
+.carousel {
+    border-radius: 0px !important;
+    margin: 0rem !important;
+}
+
+.carousel-control-prev {
+    margin-left: 1rem;
+}
+
+.carousel-control-next {
+    margin-right: 1rem;
+}
+
+.slw-trans {
+    transition: all .7s ease-in-out;
+}
+
+@media only screen and (min-width: 768px) {
+    .carousel-inner {
+        border-radius: 4px !important;
+    }
+
+    .carousel-control-prev {
+        margin-left: 0rem;
+    }
+    
+    .carousel-control-next {
+        margin-right: 0rem;
+    }
+
+    .carousel {
+        float: right;
+        margin: 3rem !important;
+        margin-top: 1.33rem !important;
+    }
+
+    .aboutBox {
+        border-radius: 4px !important;
+        margin-left: 1rem !important;
+        margin-right: 1rem !important;
+    }
+}
+
+.aboutBox.scrolled {
+    margin-top: 60px !important;
+    transition: all .7s ease-in-out;
+}
+
+.card-columns {
+    font-family: RobotoLight;
+    margin-top: 300px;
+    transition: all .7s ease-in-out;
+}
+
+.card-columns.scrolled {
+    margin-top: 0px;
+    transition: all .7s ease-in-out;
+}
+
+@font-face {
+    font-family: RobotoCondensed;
+    src: url("../fonts/Roboto-Condensed.ttf");
+}
+
+@font-face {
+    font-family: RobotoThin;
+    src: url("../fonts/Roboto-Thin.ttf");
+}
+
+@font-face {
+    font-family: RobotoLight;
+    src: url("../fonts/Roboto-Light.ttf");
+}
